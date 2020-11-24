@@ -1,0 +1,45 @@
+<mat-toolbar color="white"> 
+    <span>My Application</span>
+    <span class="spacer"></span>
+    <span class="textBetween"><a class="text">Places to stay</a></span>
+    <span class="textBetween"><a class="text">Experiences</a></span>
+    <span class="spacer"></span>
+    <div class="userBox">
+      <div *ngIf="userLogin else elseBlock"class="userLoggedIn">
+        <button mat-fab color="primary" [matMenuTriggerFor]="menu" class="face"></button>
+      <mat-menu #menu="matMenu" xPosition="before" >
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Log out</span>
+        </button>
+      </mat-menu> 
+      </div>
+      <div *ngIf="!userLogin"class="userNotLoggedIn">
+        <button mat-fab color="primary" class="faceDefault" [matMenuTriggerFor]="menu2"></button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item routerLink='/signup'>
+            <!-- <mat-icon>Login</mat-icon> -->
+            <span class="menu2SignupButton">Signup</span>
+          </button>
+          <button mat-menu-item (click)="openDialog()">
+            <!-- <mat-icon>settings</mat-icon> -->
+            <span >Login</span>
+          </button>
+          
+          <button mat-menu-item>
+            <!-- <mat-icon></mat-icon> -->
+            <span>Help</span>
+          </button>
+        </mat-menu> 
+      </div>
+    </div>   
+</mat-toolbar>
+<!-- #00d1b2 -->   

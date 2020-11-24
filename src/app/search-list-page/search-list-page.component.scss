@@ -1,0 +1,15 @@
+.firstDiv{
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "a b";
+    
+}
+
+.left{
+background-color: green;
+}
+
+.right{
+    background-color: burlywood;
+}  

@@ -1,0 +1,99 @@
+.outerDiv{
+
+  background-color: #ffffff;
+  margin: auto;
+  width:80%;
+  height:80px;
+  border: solid #e6e6e6 1px;
+  border-radius: 5px;
+
+}
+.grid{
+  position:relative;
+  display: grid;
+  //grid-gap:2px;
+  
+  grid-template-columns: 2fr 2fr 2fr 2fr 1.5fr;
+  grid-area: "a b c d e";
+}
+.searchField{
+
+  //position: absolute;
+  padding-top: 32px;
+  height: 39px ;
+  width:85%;
+  padding-left: 5px;
+  border-style: hidden;
+  font-size: 1.2em;
+  color: #a9a9a9;
+}
+
+.search-label, .price-label {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  color: #5a6674;
+  z-index: 999;
+  outline:none;
+  
+}
+.searchButton{
+
+  height: 78px;
+  width: 100%;
+}
+.price-block .button span {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  background: none;
+  //color: #a9a9a9;
+  width: 90%;
+  height: 30px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+.ob{
+  position: relative;
+  border-left: solid #e6e6e6 1px;
+}
+.buttonSearchLast{
+  color:white;
+  height: 80px;
+  border-style:none;
+  background-color: #00d1b2;
+  font-size: 1.5em;
+  border-radius: 0px 5px 5px 0px;
+  // border-end-end-radius: 5px;
+  // border-start-end-radius:5px;
+}
+.buttonSearchLast:hover{
+  background-color: #00b89c;
+}
+.searchBar{
+  padding-top: 100px;
+}
+.searchField:focus, textarea , label:focus {
+  outline: none ;
+}
+.a{
+  outline:0;
+  outline:none;
+  outline-style: none;
+}
+a:focus{
+  outline:0;
+}
+.tagSearch{
+ 
+  text-align: left;
+  padding-left: 5%;
+  color: #a9a9a9;
+  opacity: 60%;
+  font-size: 1.2em;
+  font-size: 1.2em;
+ 
+}
